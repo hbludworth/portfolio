@@ -1,2 +1,16 @@
 @charset "utf-8";
-@import '../node_modules/bulma/bulma.sass';
+
+$navbar-height: 4rem;
+$primary: #3a79d9;
+
+@import '../../node_modules/bulma/bulma.sass';
+
+#avatar {
+  width: 220px;
+
+  @include mobile {
+    width: 140px;
+  }
+
+  border-radius: 50%;
+}
