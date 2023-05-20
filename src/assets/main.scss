@@ -3,6 +3,7 @@
 
 $navbar-height: 4.5rem;
 $primary: #3a79d9;
+$info: #d93a79;
 $navbar-item-hover-color: $primary;
 @import '../../node_modules/bulma/bulma.sass';
 
@@ -36,7 +37,7 @@ $navbar-item-hover-color: $primary;
 
 .skillset .box {
   border: 0.5px solid lightgray;
-  padding: 0;
+  padding: 12px;
 }
 
 .skillset {
@@ -44,8 +45,6 @@ $navbar-item-hover-color: $primary;
 }
 
 .skill-column {
-  margin-bottom: 2rem;
-  margin: 12px;
   padding: 2rem;
 }
 
@@ -55,13 +54,21 @@ $navbar-item-hover-color: $primary;
 }
 
 .skillset .column:first-child {
-  border-right: 0.5px solid lightgray;
-  padding-right: 3rem;
+  @include mobile {
+    border-bottom: 0.5px solid lightgray;
+  }
+  @include tablet {
+    border-right: 0.5px solid lightgray;
+  }
 }
 
 .skillset .column:last-child {
-  border-left: 0.5px solid lightgray;
-  padding-left: 3rem;
+  @include mobile {
+    border-top: 0.5px solid lightgray;
+  }
+  @include tablet {
+    border-left: 0.5px solid lightgray;
+  }
 }
 
 .is-extended .container {
@@ -70,12 +77,10 @@ $navbar-item-hover-color: $primary;
 
 .testimonials .box {
   border: 0.5px solid lightgray;
-  padding: 0;
+  padding: 12px;
 }
 
 .testimonial-column {
-  margin-bottom: 2rem;
-  margin: 12px;
   padding: 2rem;
 }
 
@@ -89,11 +94,6 @@ $navbar-item-hover-color: $primary;
 
 .testimonials .column:first-child {
   border-right: 0.5px solid lightgray;
-  padding-right: 3rem;
-}
-
-.testimonials .column:last-child {
-  padding-left: 3rem;
 }
 
 .title-font {
@@ -110,4 +110,11 @@ $navbar-item-hover-color: $primary;
 
 .navbar-brand {
   padding-left: 10px;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: none;
 }

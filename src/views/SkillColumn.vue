@@ -1,5 +1,12 @@
 <template>
-  <div class="column skill-column">
+  <div class="column skill-column py-6">
+    <div class="box icon-circle mx-auto has-background-info">
+      <p class="mt-1">
+        <span class="icon">
+          <span :class="`mdi mdi-36px has-text-white ${icon}`" />
+        </span>
+      </p>
+    </div>
     <h1 class="title is-size-4 is-spaced title-font">{{ title }}</h1>
     <p>{{ description }}</p>
     <p class="skill-title has-text-primary has-text-weight-medium title-font is-size-5-tablet">
@@ -19,6 +26,10 @@
 import type { PropType } from 'vue';
 
 defineProps({
+  icon: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: true,

@@ -55,6 +55,7 @@
           <SkillColumn
             v-for="(skill, idx) in skillColumnData"
             :key="idx"
+            :icon="skill.icon"
             :title="skill.title"
             :description="skill.description"
             :subtitle1="skill.subtitle1"
@@ -156,6 +157,7 @@ import TestimonialView from './TestimonialView.vue';
 import { ref, type Ref } from 'vue';
 
 interface SkillColumnTemplate {
+  icon: string;
   title: string;
   description: string;
   subtitle1: string;
@@ -166,6 +168,7 @@ interface SkillColumnTemplate {
 
 const skillColumnData: Ref<SkillColumnTemplate[]> = ref([
   {
+    icon: 'mdi-xml',
     title: 'Full Stack Developer',
     description:
       'I can build beautiful, functional, and scalable web applications from the ground up.',
@@ -188,6 +191,7 @@ const skillColumnData: Ref<SkillColumnTemplate[]> = ref([
     ],
   },
   {
+    icon: 'mdi-account-multiple',
     title: 'Project Manager',
     description: 'I have managed multiple teams of developers and designers on various projects.',
     subtitle1: 'Skills',
@@ -196,6 +200,7 @@ const skillColumnData: Ref<SkillColumnTemplate[]> = ref([
     subtitle2ListItems: ['Agile/Scrum', 'Kanban', 'GitHub', 'Jira', 'Trello', 'Slack', 'MS Office'],
   },
   {
+    icon: 'mdi-cog',
     title: 'Technical Cofounder',
     description:
       'I have experience building and launching new software products as a startup cofounder.',
