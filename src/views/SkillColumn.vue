@@ -19,11 +19,26 @@
 import type { PropType } from 'vue';
 
 defineProps({
-  title: String,
-  description: String,
-  subtitle1: String,
-  subtitle1Description: String,
-  subtitle2: String,
-  subtitle2ListItems: Array as PropType<string[]>,
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  subtitle1: {
+    type: String,
+    required: true,
+  },
+  subtitle1Description: {
+    type: String,
+    required: true,
+  },
+  subtitle2: {
+    type: String,
+    required: true,
+  },
+  subtitle2ListItems: { type: Array as PropType<string[]>, required: true },
 });
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="column testimonial-column">
-    <img :src="imagePath" class="mt-4 avatar-mini" />
+    <img :src="getImageUrl(imagePath)" class="mt-4 avatar-mini" />
     <p class="is-size-5-tablet mt-4">
       {{ quote }}
     </p>
@@ -15,9 +15,23 @@
 
 <script setup lang="ts">
 defineProps({
-  imagePath: String,
-  quote: String,
-  name: String,
-  title: String,
+  imagePath: {
+    type: String,
+    required: true,
+  },
+  quote: {
+    type: String,
+    required: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
 });
+
+const getImageUrl = (name: string) => new URL(`../assets/${name}`, import.meta.url).href;
 </script>

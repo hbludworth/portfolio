@@ -186,7 +186,7 @@ interface TestimonialTemplate {
 
 const testimonialData: Ref<TestimonialTemplate[]> = ref([
   {
-    imagePath: '/src/assets/brett-profile.jpeg',
+    imagePath: 'brett-profile.jpeg',
     quote: `"Working with Harrison has been a pleasure. He became comfortable with our codebase incredibly
       quickly and has built multiple key features of the website. His code is clean, readable, and
       scalable. [He] does such a good job communicating the work he is doing and making sure that
@@ -196,7 +196,7 @@ const testimonialData: Ref<TestimonialTemplate[]> = ref([
     title: 'Frontend Engineer',
   },
   {
-    imagePath: '/src/assets/justis-profile.jpeg',
+    imagePath: 'justis-profile.jpeg',
     quote: `"Harrison is one of the best developers I have ever worked with. He has a deep knowledge 
       of our tech stack and does a really good job keeping up with new technologies. He keeps our whole
       site running single-handedly. He is prompt in responding, clear in requests, and a great team leader.
