@@ -24,12 +24,8 @@
             Projects
           </RouterLink>
 
-          <RouterLink class="navbar-item" to="/writing" @click="menuIsActive = !menuIsActive">
-            Writing
-          </RouterLink>
-
-          <RouterLink class="navbar-item" to="/resume" @click="menuIsActive = !menuIsActive">
-            Resume
+          <RouterLink class="navbar-item" to="/experience" @click="menuIsActive = !menuIsActive">
+            Experience
           </RouterLink>
         </div>
       </div>

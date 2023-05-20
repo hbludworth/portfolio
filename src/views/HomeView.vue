@@ -40,8 +40,8 @@
             Entrepreneurship and Computer Science, I am currently looking for a full-time position
             as a software engineer and am confident that I can be a valuable asset to any team.
           </h2>
-          <button class="button is-rounded">
-            <RouterLink to="/resume">My Resume</RouterLink>
+          <button class="button is-rounded is-medium">
+            <RouterLink to="/experience">My Experience</RouterLink>
           </button>
         </div>
       </div>
@@ -82,7 +82,7 @@
             fun, challenging, and rewarding projects. I've used many different technologies and
             languages to build some cool stuff. Here are a few of my favorites:
           </h2>
-          <button class="button is-rounded">
+          <button class="button is-rounded is-medium">
             <RouterLink to="/projects">My Projects</RouterLink>
           </button>
         </div>
@@ -112,6 +112,17 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer has-background-primary has-text-white has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <img src="@/assets/profile.jpeg" class="mt-4 avatar-mini" />
+          <p class="mt-4">Built by me. © 2023.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script setup lang="ts">
