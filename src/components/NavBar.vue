@@ -27,6 +27,14 @@
           <RouterLink class="navbar-item" to="/experience" @click="menuIsActive = !menuIsActive">
             Experience
           </RouterLink>
+
+          <div class="nav-bar-item is-flex is-align-items-center ml-2">
+            <a
+              class="button is-primary is-outlined is-rounded"
+              href="mailto:dev@harrisonbludworth.com"
+              >Message Me</a
+            >
+          </div>
         </div>
       </div>
     </div>

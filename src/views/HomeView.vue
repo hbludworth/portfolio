@@ -40,7 +40,7 @@
             Entrepreneurship and Computer Science, I am currently looking for a full-time position
             as a software engineer and am confident that I can be a valuable asset to any team.
           </h2>
-          <button class="button is-rounded is-medium">
+          <button class="button is-rounded">
             <RouterLink to="/experience">My Experience</RouterLink>
           </button>
         </div>
@@ -82,7 +82,7 @@
             fun, challenging, and rewarding projects. I've used many different technologies and
             languages to build some cool stuff. Here are a few of my favorites:
           </h2>
-          <button class="button is-rounded is-medium">
+          <button class="button is-rounded">
             <RouterLink to="/projects">My Projects</RouterLink>
           </button>
         </div>
@@ -118,7 +118,32 @@
       <div class="columns">
         <div class="column">
           <img src="@/assets/profile.jpeg" class="mt-4 avatar-mini" />
-          <p class="mt-4">Built by me. © 2023.</p>
+          <p class="mt-6">
+            <span class="icon mx-4">
+              <a
+                href="https://github.com/hbludworth"
+                target="_blank"
+                class="mdi mdi-github mdi-36px has-text-white"
+              />
+            </span>
+            <span class="icon mx-4">
+              <a
+                href="https://www.linkedin.com/in/hbludworth/"
+                target="_blank"
+                class="mdi mdi-linkedin mdi-36px has-text-white"
+              />
+            </span>
+            <span class="icon mx-4">
+              <a
+                href="mailto:dev@harrisonbludworth.com"
+                target="_blank"
+                class="mdi mdi-email-open mdi-36px has-text-white"
+              />
+            </span>
+          </p>
+          <p class="mt-6">Made by me. © 2023.</p>
+          <p class="mt-5 is-size-7">Built with Vue 3, Bulma, and TypeScript.</p>
+          <p class="mt-1 is-size-7">Deployed on AWS S3.</p>
         </div>
       </div>
     </div>
