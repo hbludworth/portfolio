@@ -1,11 +1,12 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nandinagari&family=PT+Sans+Caption:wght@700&display=swap');
 
 $navbar-height: 4rem;
 $primary: #3a79d9;
 
 @import '../../node_modules/bulma/bulma.sass';
 
-#avatar {
+.avatar {
   width: 220px;
 
   @include mobile {
@@ -13,4 +14,96 @@ $primary: #3a79d9;
   }
 
   border-radius: 50%;
+}
+
+.avatar-mini {
+  width: 75px;
+
+  @include mobile {
+    width: 65px;
+  }
+
+  border-radius: 50%;
+}
+
+.dig-art {
+  width: 750px;
+
+  @include mobile {
+    width: 350px;
+  }
+}
+
+.skillset .box {
+  border: 0.5px solid lightgray;
+  padding: 0;
+}
+
+.skillset {
+  margin-top: -10rem;
+}
+
+.skill-column {
+  margin-bottom: 2rem;
+  margin: 12px;
+  padding: 2rem;
+}
+
+.skill-column .skill-title {
+  margin-top: 50px;
+  margin-bottom: 8px;
+}
+
+.skillset .column:first-child {
+  border-right: 0.5px solid lightgray;
+  padding-right: 3rem;
+}
+
+.skillset .column:last-child {
+  border-left: 0.5px solid lightgray;
+  padding-left: 3rem;
+}
+
+.is-extended .container {
+  margin-bottom: 6rem;
+}
+
+.testimonials .box {
+  border: 0.5px solid lightgray;
+  padding: 0;
+}
+
+.testimonial-column {
+  margin-bottom: 2rem;
+  margin: 12px;
+  padding: 2rem;
+}
+
+.testimonials .column:first-child {
+  margin-right: 0;
+}
+
+.testimonials .column:last-child {
+  margin-left: 0;
+}
+
+.testimonials .column:first-child {
+  border-right: 0.5px solid lightgray;
+  padding-right: 3rem;
+}
+
+.testimonials .column:last-child {
+  padding-left: 3rem;
+}
+
+.title-font {
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+* {
+  font-family: 'Noto Sans Nandinagari', sans-serif;
+}
+
+.description-box {
+  line-height: 30px;
 }
