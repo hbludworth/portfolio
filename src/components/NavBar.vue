@@ -2,7 +2,9 @@
   <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <RouterLink class="navbar-item" to="/"> Home </RouterLink>
+        <RouterLink class="navbar-item" to="/">
+          <img src="@/assets/logo.png" class="logo mb-1" />
+        </RouterLink>
 
         <a
           role="button"
@@ -30,7 +32,7 @@
 
           <div class="nav-bar-item is-flex is-align-items-center ml-2">
             <a
-              class="button is-primary is-outlined is-rounded"
+              class="button is-primary is-outlined is-rounded msg-btn"
               href="mailto:dev@harrisonbludworth.com"
               >Message Me</a
             >

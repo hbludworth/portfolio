@@ -5,6 +5,8 @@ $navbar-height: 4.5rem;
 $primary: #3a79d9;
 $info: #d93a79;
 $navbar-item-hover-color: $primary;
+$navbar-item-img-max-height: 4.5rem;
+
 @import '../../node_modules/bulma/bulma.sass';
 
 .avatar {
@@ -81,7 +83,7 @@ $navbar-item-hover-color: $primary;
 }
 
 .testimonial-column {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .testimonials .column:first-child {
@@ -117,4 +119,19 @@ $navbar-item-hover-color: $primary;
   width: 56px;
   height: 56px;
   box-shadow: none;
+}
+
+.logo {
+  @include mobile {
+    width: 40px;
+  }
+  width: 50px;
+}
+
+.logo-footer {
+  width: 70px;
+}
+
+.msg-btn {
+  border: 2px solid $primary;
 }

@@ -118,7 +118,7 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <img src="@/assets/profile.jpeg" class="mt-4 avatar-mini" />
+          <img src="@/assets/logo-white.png" class="mt-4 logo-footer" />
           <p class="mt-6">
             <span class="icon mx-4">
               <a
@@ -143,7 +143,7 @@
             </span>
           </p>
           <p class="mt-6">Made by me. © 2023.</p>
-          <p class="mt-5 is-size-7">Built with Vue 3, Bulma, and TypeScript.</p>
+          <p class="mt-5 is-size-7">Built with Vue, Bulma, and TypeScript.</p>
           <p class="mt-1 is-size-7">Deployed on AWS S3.</p>
         </div>
       </div>
@@ -241,7 +241,7 @@ const testimonialData: Ref<TestimonialTemplate[]> = ref([
     quote: `"Harrison is one of the best developers I have ever worked with. He has a deep knowledge 
       of our tech stack and does a really good job keeping up with new technologies. He keeps our whole
       site running single-handedly. He is prompt in responding, clear in requests, and a great team leader.
-      I would highly recommend Harrison for any position for which he is being considered. "`,
+      I would highly recommend Harrison for any position for which he is being considered."`,
     name: 'Justis Brown',
     title: 'Full Stack Developer',
   },
