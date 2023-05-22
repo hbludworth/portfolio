@@ -11,13 +11,18 @@
             </h1>
             <h2 class="subtitle is-size-4-tablet">I design and build quality software products.</h2>
             <img src="@/assets/profile.jpeg" class="mt-4 avatar" />
+            <h2 class="subtitle is-size-5-tablet mt-6">Interested in my services?</h2>
+            <div class="level">
+              <div class="level-item has-text-centered">
+                <a
+                  class="button is-primary is-outlined is-rounded msg-btn is-medium"
+                  href="mailto:dev@harrisonbludworth.com"
+                  >Message Me</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="hero-foot">
-      <div class="container">
-        <img src="@/assets/dev_art.png" class="dig-art" />
       </div>
     </div>
   </section>
@@ -145,6 +150,12 @@
           <p class="mt-6">Made by me. © 2023.</p>
           <p class="mt-5 is-size-7">Built with Vue, Bulma, and TypeScript.</p>
           <p class="mt-1 is-size-7">Deployed on AWS S3.</p>
+          <a
+            href="https://github.com/hbludworth/portfolio"
+            target="_blank"
+            class="mt-1 is-size-7 has-text-white is-underlined"
+            >Source</a
+          >
         </div>
       </div>
     </div>
@@ -246,5 +257,4 @@ const testimonialData: Ref<TestimonialTemplate[]> = ref([
     title: 'Full Stack Developer',
   },
 ]);
-//<a href="https://www.freepik.com/free-vector/storage-designs-set_957450.htm#query=digital%20art%20web%20server%20development&position=35&from_view=search&track=ais">Image by newelement</a> on Freepik
 </script>
