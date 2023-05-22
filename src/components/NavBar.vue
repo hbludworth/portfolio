@@ -22,19 +22,11 @@
 
       <div class="navbar-menu" :class="{ 'is-active': menuIsActive }">
         <div class="navbar-end">
-          <RouterLink class="navbar-item" to="/projects" @click="menuIsActive = !menuIsActive">
-            Projects
-          </RouterLink>
-
-          <RouterLink class="navbar-item" to="/experience" @click="menuIsActive = !menuIsActive">
-            Experience
-          </RouterLink>
-
           <div class="nav-bar-item is-flex is-align-items-center ml-2">
             <a
               class="button is-primary is-outlined is-rounded msg-btn"
               href="mailto:dev@harrisonbludworth.com"
-              >Message Me</a
+              >Say Hi</a
             >
           </div>
         </div>

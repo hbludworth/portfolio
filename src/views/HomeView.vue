@@ -45,9 +45,6 @@
             Entrepreneurship and Computer Science, I am currently looking for a full-time position
             as a software engineer and am confident that I can be a valuable asset to any team.
           </h2>
-          <button class="button is-rounded">
-            <RouterLink to="/experience">My Experience</RouterLink>
-          </button>
         </div>
       </div>
     </div>
@@ -86,11 +83,19 @@
             During my three years as a full stack developer, and as an Entrepreneurship and Computer
             Science student at Brigham Young University, I've had the opportunity to work on many
             fun, challenging, and rewarding projects. I've used many different technologies and
-            languages to build some cool stuff. Here are a few of my favorites:
+            languages to build some cool stuff. Here are a few of my favorites.
           </h2>
-          <button class="button is-rounded">
-            <RouterLink to="/projects">My Projects</RouterLink>
-          </button>
+        </div>
+      </div>
+      <div class="columns is-centered mt-6">
+        <div class="column is-one-third" v-for="(project, idx) in myProjects" :key="idx">
+          <ProjectCard
+            :title="project.title"
+            :imagePath="project.imagePath"
+            :description="project.description"
+            :viewLink="project.viewLink"
+            :githubLink="project.githubLink"
+          />
         </div>
       </div>
     </div>
@@ -165,6 +170,7 @@
 <script setup lang="ts">
 import SkillColumn from './SkillColumn.vue';
 import TestimonialView from './TestimonialView.vue';
+import ProjectCard from './ProjectCard.vue';
 import { ref, type Ref } from 'vue';
 
 interface SkillColumnTemplate {
@@ -255,6 +261,40 @@ const testimonialData: Ref<TestimonialTemplate[]> = ref([
       I would highly recommend Harrison for any position for which he is being considered."`,
     name: 'Justis Brown',
     title: 'Full Stack Developer',
+  },
+]);
+
+interface ProjectTemplate {
+  title: string;
+  imagePath: string;
+  description: string;
+  viewLink?: string;
+  githubLink?: string;
+}
+
+const myProjects: Ref<ProjectTemplate[]> = ref([
+  {
+    title: 'OARE',
+    imagePath: 'oare.png',
+    description:
+      'The Old Assyrian Research Environment is a digital humanities project at BYU that helps historians analyze and perform research on ancient cuneiform tablets. It is built with Vue, Node.js, TypeScript, and SQL. I am the primary contributor to the project.',
+    viewLink: 'https://oare.byu.edu',
+    githubLink: 'https://github.com/oaregithub/oare_mono',
+  },
+  {
+    title: 'MicDrop',
+    imagePath: 'micdrop.png',
+    description:
+      'MicDrop is a Chrome extension that allows users to send and receive audio messages from within Gmail. It allows for basic customization and is built with Vue, Node.js, and TypeScript. (Note: Landing page is not my work. The full product itself is.)',
+    viewLink: 'https://www.sendmicdrop.com',
+    githubLink: 'https://github.com/hbludworth/micdrop',
+  },
+  {
+    title: 'My Portfolio',
+    imagePath: 'portfolio.png',
+    description:
+      'This is the page that you are currently viewing. It is meant to highlight my abilities and demonstrate my excitement for software development. It is an extremely simple portfolio page built with Vue, Bulma, and TypeScript and is hosted on AWS S3.',
+    githubLink: 'https://github.com/hbludworth/portfolio',
   },
 ]);
 </script>
