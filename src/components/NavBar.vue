@@ -22,13 +22,9 @@
 
       <div class="navbar-menu" :class="{ 'is-active': menuIsActive }">
         <div class="navbar-end">
-          <div class="nav-bar-item is-flex is-align-items-center ml-2">
-            <a
-              class="button is-primary is-outlined is-rounded msg-btn"
-              href="mailto:dev@harrisonbludworth.com"
-              >Say Hi</a
-            >
-          </div>
+          <a class="navbar-item" href="#about">About</a>
+          <a class="navbar-item" href="#projects">Projects</a>
+          <a class="navbar-item" href="#experience">Experience</a>
         </div>
       </div>
     </div>

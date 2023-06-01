@@ -127,3 +127,25 @@ $navbar-item-img-max-height: 4.5rem;
 .msg-btn {
   border: 2px solid $primary;
 }
+
+.experience-card {
+  box-shadow: none;
+}
+
+.line {
+  width: 3px;
+  height: 75px;
+  background: $info;
+  margin: auto;
+}
+
+.experience-columns {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.say-hi-btn {
+  @include mobile {
+    display: none;
+  }
+}

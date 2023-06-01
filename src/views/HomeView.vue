@@ -27,7 +27,10 @@
     </div>
   </section>
 
-  <section class="section is-medium has-text-centered has-background-primary is-extended">
+  <section
+    id="about"
+    class="section is-medium has-text-centered has-background-primary is-extended"
+  >
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-three-fifths">
@@ -70,7 +73,7 @@
     </div>
   </section>
 
-  <section class="section is-medium has-text-centered has-background-primary">
+  <section id="projects" class="section is-medium has-text-centered has-background-primary">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-three-fifths">
@@ -101,12 +104,55 @@
     </div>
   </section>
 
-  <section class="section has-text-centered testimonials is-medium">
+  <section id="experience" class="section is-medium has-text-centered">
     <div class="container">
-      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile has-text-primary title-font">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <h1
+            class="title is-spaced is-size-3-desktop is-size-4-mobile has-text-primary title-font"
+          >
+            My Experience
+          </h1>
+          <h2
+            class="subtitle is-size-5-desktop has-text-weight-normal has-text-primary description-box"
+          >
+            I've had the opportunity to work in a few different developer and developer-adjacent
+            roles over the years. I'm confident that my experience gained in these roles has
+            prepared me to be a valuable asset to any team.
+          </h2>
+        </div>
+      </div>
+      <div class="columns is-centered experience-columns">
+        <div class="column is-three-fifths">
+          <ExperienceView
+            v-for="(experience, idx) in myExperience"
+            :key="idx"
+            :company="experience.company"
+            :position="experience.position"
+            :time="experience.time"
+            :hasLine="idx !== myExperience.length - 1"
+          />
+        </div>
+      </div>
+      <h2 class="subtitle is-size-5-tablet mt-6">Looking for a full resume?</h2>
+      <div class="level">
+        <div class="level-item has-text-centered">
+          <a
+            class="button is-primary is-outlined is-rounded msg-btn is-medium"
+            href="mailto:dev@harrisonbludworth.com"
+            >Email Me</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-text-centered testimonials is-medium has-background-primary">
+    <div class="container">
+      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile has-text-white title-font">
         Testimonials
       </h1>
-      <h2 class="subtitle is-size-5-desktop has-text-weight-normal has-text-primary mb-6">
+      <h2 class="subtitle is-size-5-desktop has-text-weight-normal has-text-white mb-6">
         Some nice things my colleagues have said about me.
       </h2>
       <div class="box">
@@ -124,31 +170,31 @@
     </div>
   </section>
 
-  <footer class="footer has-background-primary has-text-white has-text-centered">
+  <footer class="footer has-background-white has-text-primary has-text-centered">
     <div class="container">
       <div class="columns">
         <div class="column">
-          <img src="@/assets/logo-white.png" class="mt-4 logo-footer" />
+          <img src="@/assets/logo.png" class="mt-4 logo-footer" />
           <p class="mt-6">
             <span class="icon mx-4">
               <a
                 href="https://github.com/hbludworth"
                 target="_blank"
-                class="mdi mdi-github mdi-36px has-text-white"
+                class="mdi mdi-github mdi-36px has-text-primary"
               ></a>
             </span>
             <span class="icon mx-4">
               <a
                 href="https://www.linkedin.com/in/hbludworth/"
                 target="_blank"
-                class="mdi mdi-linkedin mdi-36px has-text-white"
+                class="mdi mdi-linkedin mdi-36px has-text-primary"
               ></a>
             </span>
             <span class="icon mx-4">
               <a
                 href="mailto:dev@harrisonbludworth.com"
                 target="_blank"
-                class="mdi mdi-email-open mdi-36px has-text-white"
+                class="mdi mdi-email-open mdi-36px has-text-primary"
               ></a>
             </span>
           </p>
@@ -158,7 +204,7 @@
           <a
             href="https://github.com/hbludworth/portfolio"
             target="_blank"
-            class="mt-1 is-size-7 has-text-white is-underlined"
+            class="mt-1 is-size-7 has-text-primary is-underlined"
             >Source</a
           >
         </div>
@@ -171,6 +217,7 @@
 import SkillColumn from '@/components/SkillColumn.vue';
 import TestimonialView from '@/components/TestimonialView.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
+import ExperienceView from '@/components/ExperienceView.vue';
 import { ref, type Ref } from 'vue';
 
 interface SkillColumnTemplate {
@@ -295,6 +342,40 @@ const myProjects: Ref<ProjectTemplate[]> = ref([
     description:
       'This is the page that you are currently viewing. It is meant to highlight my abilities and demonstrate my excitement for software development. It is an extremely simple portfolio page built with Vue, Bulma, and TypeScript and is hosted on AWS S3.',
     githubLink: 'https://github.com/hbludworth/portfolio',
+  },
+]);
+
+interface ExperienceTemplate {
+  company: string;
+  position: string;
+  time: string;
+}
+
+const myExperience: Ref<ExperienceTemplate[]> = ref([
+  {
+    company: 'Brigham Young University - Department of History',
+    position: 'Full Stack Developer - Team Lead - Project Manager',
+    time: 'October 2020 - Present',
+  },
+  {
+    company: 'MicDrop',
+    position: 'Technical Cofounder',
+    time: 'January 2022 - February 2023',
+  },
+  {
+    company: 'Entrata',
+    position: 'Search Engine Optimization Intern - Team Leader',
+    time: 'January 2021 - April 2021',
+  },
+  {
+    company: 'Vivint Smart Home',
+    position: 'Account Specialist',
+    time: 'June 2020 - October 2020',
+  },
+  {
+    company: 'Filevine',
+    position: 'Intake Specialist',
+    time: 'September 2019 - March 2020',
   },
 ]);
 </script>
