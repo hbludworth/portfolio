@@ -134,11 +134,16 @@
           />
         </div>
       </div>
-      <h2 class="subtitle is-size-5-tablet mt-6">Looking for a full resume?</h2>
+    </div>
+  </section>
+
+  <section class="section has-text-centered has-background-primary resume-box">
+    <div class="container">
+      <h2 class="subtitle is-size-5-tablet mt-6 has-text-white">Looking for a full resume?</h2>
       <div class="level">
         <div class="level-item has-text-centered">
           <a
-            class="button is-primary is-outlined is-rounded msg-btn is-medium"
+            class="button is-white is-outlined is-rounded is-medium"
             href="mailto:dev@harrisonbludworth.com"
             >Email Me</a
           >
@@ -147,12 +152,12 @@
     </div>
   </section>
 
-  <section class="section has-text-centered testimonials is-medium has-background-primary">
+  <section class="section has-text-centered testimonials is-medium has-background-white">
     <div class="container">
-      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile has-text-white title-font">
+      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile has-text-primary title-font">
         Testimonials
       </h1>
-      <h2 class="subtitle is-size-5-desktop has-text-weight-normal has-text-white mb-6">
+      <h2 class="subtitle is-size-5-desktop has-text-weight-normal has-text-primary mb-6">
         Some nice things my colleagues have said about me.
       </h2>
       <div class="box">
@@ -170,31 +175,31 @@
     </div>
   </section>
 
-  <footer class="footer has-background-white has-text-primary has-text-centered">
+  <footer class="footer has-background-primary has-text-white has-text-centered">
     <div class="container">
       <div class="columns">
         <div class="column">
-          <img src="@/assets/logo.png" class="mt-4 logo-footer" />
+          <img src="@/assets/logo-white.png" class="mt-4 logo-footer" />
           <p class="mt-6">
             <span class="icon mx-4">
               <a
                 href="https://github.com/hbludworth"
                 target="_blank"
-                class="mdi mdi-github mdi-36px has-text-primary"
+                class="mdi mdi-github mdi-36px has-text-white"
               ></a>
             </span>
             <span class="icon mx-4">
               <a
                 href="https://www.linkedin.com/in/hbludworth/"
                 target="_blank"
-                class="mdi mdi-linkedin mdi-36px has-text-primary"
+                class="mdi mdi-linkedin mdi-36px has-text-white"
               ></a>
             </span>
             <span class="icon mx-4">
               <a
                 href="mailto:dev@harrisonbludworth.com"
                 target="_blank"
-                class="mdi mdi-email-open mdi-36px has-text-primary"
+                class="mdi mdi-email-open mdi-36px has-text-white"
               ></a>
             </span>
           </p>
@@ -204,7 +209,7 @@
           <a
             href="https://github.com/hbludworth/portfolio"
             target="_blank"
-            class="mt-1 is-size-7 has-text-primary is-underlined"
+            class="mt-1 is-size-7 has-text-white is-underlined"
             >Source</a
           >
         </div>

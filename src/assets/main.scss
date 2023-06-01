@@ -141,11 +141,8 @@ $navbar-item-img-max-height: 4.5rem;
 
 .experience-columns {
   margin-top: 3rem;
-  padding-bottom: 2rem;
 }
 
-.say-hi-btn {
-  @include mobile {
-    display: none;
-  }
+.resume-box {
+  padding-bottom: 5rem;
 }
