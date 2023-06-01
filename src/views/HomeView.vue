@@ -135,21 +135,21 @@
                 href="https://github.com/hbludworth"
                 target="_blank"
                 class="mdi mdi-github mdi-36px has-text-white"
-              />
+              ></a>
             </span>
             <span class="icon mx-4">
               <a
                 href="https://www.linkedin.com/in/hbludworth/"
                 target="_blank"
                 class="mdi mdi-linkedin mdi-36px has-text-white"
-              />
+              ></a>
             </span>
             <span class="icon mx-4">
               <a
                 href="mailto:dev@harrisonbludworth.com"
                 target="_blank"
                 class="mdi mdi-email-open mdi-36px has-text-white"
-              />
+              ></a>
             </span>
           </p>
           <p class="mt-6">Made by me. © 2023.</p>
@@ -168,9 +168,9 @@
 </template>
 
 <script setup lang="ts">
-import SkillColumn from './SkillColumn.vue';
-import TestimonialView from './TestimonialView.vue';
-import ProjectCard from './ProjectCard.vue';
+import SkillColumn from '@/components/SkillColumn.vue';
+import TestimonialView from '@/components/TestimonialView.vue';
+import ProjectCard from '@/components/ProjectCard.vue';
 import { ref, type Ref } from 'vue';
 
 interface SkillColumnTemplate {
