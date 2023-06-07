@@ -90,8 +90,8 @@
           </h2>
         </div>
       </div>
-      <div class="columns is-centered mt-6">
-        <div class="column is-one-third" v-for="(project, idx) in myProjects" :key="idx">
+      <div v-for="(chunk, idx) in chunkedProjects" :key="idx" class="columns mt-6">
+        <div class="column is-one-third" v-for="(project, innerIdx) in chunk" :key="innerIdx">
           <ProjectCard
             :title="project.title"
             :imagePath="project.imagePath"
@@ -223,7 +223,7 @@ import SkillColumn from '@/components/SkillColumn.vue';
 import TestimonialView from '@/components/TestimonialView.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import ExperienceView from '@/components/ExperienceView.vue';
-import { ref, type Ref } from 'vue';
+import { ref, type Ref, computed } from 'vue';
 
 interface SkillColumnTemplate {
   icon: string;
@@ -342,6 +342,14 @@ const myProjects: Ref<ProjectTemplate[]> = ref([
     githubLink: 'https://github.com/hbludworth/micdrop',
   },
   {
+    title: 'Firebase Authentication Template',
+    imagePath: 'firebase.png',
+    description:
+      'This is a template for a Firebase Authentication system. It is a MEVN app built using TypeScript. It is meant to be a starting point for any project that requires user authentication and features both frontend and backend route guarding.',
+    viewLink: 'https://auth.harrisonbludworth.com',
+    githubLink: 'https://github.com/hbludworth/firebase-template',
+  },
+  {
     title: 'My Portfolio',
     imagePath: 'portfolio.png',
     description:
@@ -349,6 +357,16 @@ const myProjects: Ref<ProjectTemplate[]> = ref([
     githubLink: 'https://github.com/hbludworth/portfolio',
   },
 ]);
+
+const chunkedProjects = computed(() => {
+  const myProjectsCopy = myProjects.value;
+  const chunkedArrays = [];
+  const chunkSize = 3;
+  while (myProjects.value.length > 0) {
+    chunkedArrays.push(myProjectsCopy.splice(0, chunkSize));
+  }
+  return chunkedArrays;
+});
 
 interface ExperienceTemplate {
   company: string;
