@@ -350,6 +350,14 @@ const myProjects: Ref<ProjectTemplate[]> = ref([
     githubLink: 'https://github.com/hbludworth/firebase-template',
   },
   {
+    title: 'WebSocket Chat App',
+    imagePath: 'chat.png',
+    description:
+      'This is a simple chat app that uses WebSockets to allow for real-time communication between users and uses my Firebase Authentication Template for user authentication. The WebSockets are built to reconnect automatically if the connection is lost.',
+    viewLink: 'https://chat.harrisonbludworth.com',
+    githubLink: 'https://github.com/hbludworth/websocket-chat',
+  },
+  {
     title: 'My Portfolio',
     imagePath: 'portfolio.png',
     description:
