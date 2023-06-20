@@ -11,7 +11,7 @@
             </h1>
             <h2 class="subtitle is-size-4-tablet">I design and build quality software products.</h2>
             <img src="@/assets/profile.jpeg" class="mt-4 avatar" />
-            <h2 class="subtitle is-size-5-tablet mt-6">Interested in my services?</h2>
+            <h2 class="subtitle is-size-5-tablet mt-6">Want to chat?</h2>
             <div class="level">
               <div class="level-item has-text-centered">
                 <a
@@ -90,7 +90,7 @@
           </h2>
         </div>
       </div>
-      <div v-for="(chunk, idx) in chunkedProjects" :key="idx" class="columns mt-6">
+      <div v-for="(chunk, idx) in chunkedProjects" :key="idx" class="columns mt-6 is-centered">
         <div class="column is-one-third" v-for="(project, innerIdx) in chunk" :key="innerIdx">
           <ProjectCard
             :title="project.title"
@@ -277,8 +277,8 @@ const skillColumnData: Ref<SkillColumnTemplate[]> = ref([
     subtitle1Description: 'Product Management, Business Strategy, Customer Development',
     subtitle2: 'Successes',
     subtitle2ListItems: [
-      'Built and Launched 2 Products',
-      'Led 4 Product Teams',
+      'Built and Launched SaaS Product',
+      'Led 2 Product Teams',
       '#12 Product Hunt Launch',
       'Worked with 40+ B2B Customers',
       'Pushed 400,000+ lines of code',

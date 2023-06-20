@@ -8,7 +8,7 @@
         <img :src="getImageUrl(imagePath)" :alt="title" />
       </figure>
     </div>
-    <div class="card-content">
+    <div class="card-content project-card-content">
       <div class="content is-size-6">
         {{ description }}
       </div>
