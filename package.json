@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check build-only",
+    "build": "./build.sh",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "deploy": "yarn build && aws --region us-west-1 --profile portfolio-deployer s3 sync ./dist s3://portfolio-webpage --delete && aws --region us-west-1 --profile portfolio-deployer cloudfront create-invalidation --distribution-id E2O05DNW8CGHWW --paths '/*' --no-cli-pager"
+    "start": "node server/app.js"
   },
+  "type": "module",
   "dependencies": {
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
@@ -27,6 +28,7 @@
     "bulma": "^0.9.4",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
+    "express": "^4.19.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
