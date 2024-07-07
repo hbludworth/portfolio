@@ -386,7 +386,7 @@ const myExperience: Ref<ExperienceTemplate[]> = ref([
   },
   {
     company: 'Brigham Young University - Department of History',
-    position: 'Full Stack Developer - Team Lead - Project Manager',
+    position: 'Full Stack Software Engineer - Team Lead - Project Manager',
     time: 'October 2020 - July 2023',
   },
   {
