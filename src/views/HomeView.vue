@@ -342,7 +342,6 @@ const myProjects: Ref<ProjectTemplate[]> = ref([
     imagePath: 'firebase.png',
     description:
       'This is a template for a Firebase Authentication system. It is a MEVN app built using TypeScript. It is meant to be a starting point for any project that requires user authentication and features both frontend and backend route guarding.',
-    viewLink: 'https://auth.harrisonbludworth.com',
     githubLink: 'https://github.com/hbludworth/firebase-template',
   },
   {
@@ -350,7 +349,6 @@ const myProjects: Ref<ProjectTemplate[]> = ref([
     imagePath: 'chat.png',
     description:
       'This is a simple chat app that uses WebSockets to allow for real-time communication between users and uses my Firebase Authentication Template for user authentication. The WebSockets are built to reconnect automatically if the connection is lost.',
-    viewLink: 'https://chat.harrisonbludworth.com',
     githubLink: 'https://github.com/hbludworth/websocket-chat',
   },
   {

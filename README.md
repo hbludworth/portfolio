@@ -8,4 +8,3 @@ Because the setup is pretty straightforward, I've just included descriptions of 
 
 - `yarn dev` - This will start a development instance of the server that can be accessed at `localhost:5173`.
 - `yarn build` - This will build a production-ready distribution of the site and places it in a folder called `dist` in the root directory.
-- `yarn deploy` - This will build the site, upload the updated files to the S3 bucket, and create a CloudFront invalidation. Note that this requires the AWS CLI and a properly configured AWS profile.
