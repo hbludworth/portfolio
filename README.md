@@ -7,7 +7,7 @@ Running this portfolio application locally is pretty straightforward. I've inclu
 ## Scripts
 
 - `yarn dev` - This will start a development instance of the server that can be accessed at `localhost:5173`.
-- `yarn build` - This will build a production-ready distribution of the site and places it in a folder called `dist` in the root directory.
+- `yarn build` - This will build a production-ready version of the site and place it in a folder called `dist` in the root directory.
 - `yarn lint` - This will run ESLint with the `--fix` flag set.
 - `yarn format` - This will use Prettier to automatically format the codebase.
 
