@@ -41,11 +41,11 @@
             class="subtitle is-size-5-desktop has-text-weight-normal has-text-white description-box"
           >
             I'm an experienced full stack software engineer with a passion for building beautiful,
-            functional, and scalable web applications. I currently work as a full stack engineer at
-            Fidelity Investments. I've developed many projects in various positions including as a
-            full-time employee, a freelance developer, a project manager, and even as a technical
-            cofounder. I excel at understanding complex problems, building powerful solutions, and
-            developing products that customers need.
+            functional, and scalable web applications. I currently work as a Senior Full Stack
+            Engineer at Fidelity Investments. I've developed many projects in various positions
+            including as a full-time employee, a freelance developer, a project manager, and even as
+            a technical cofounder. I excel at understanding complex problems, building powerful
+            solutions, and developing products that customers need.
           </h2>
         </div>
       </div>
@@ -246,16 +246,13 @@ const skillColumnData: Ref<SkillColumnTemplate[]> = ref([
     subtitle2ListItems: [
       'TypeScript',
       'Node.js',
-      'Express',
+      'GraphQL',
       'Vue',
+      'Angular',
+      'Express',
       'SQL',
-      'React',
       'HTML/CSS',
       'JavaScript',
-      'Python',
-      'Java',
-      'Swift',
-      'C++',
     ],
   },
   {
@@ -277,9 +274,8 @@ const skillColumnData: Ref<SkillColumnTemplate[]> = ref([
     subtitle2: 'Successes',
     subtitle2ListItems: [
       'Built and Launched SaaS Product',
-      'Led 2 Product Teams',
       '#12 Product Hunt Launch',
-      'Worked with 40+ B2B Customers',
+      'Worked with 20+ B2B Customers',
       'Pushed 400,000+ lines of code',
       '200+ MAU in 3 months',
     ],
