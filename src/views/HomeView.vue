@@ -128,6 +128,8 @@
             :company="experience.company"
             :position="experience.position"
             :time="experience.time"
+            :position-two="experience.positionTwo"
+            :time-two="experience.timeTwo"
             :hasLine="idx !== myExperience.length - 1"
           />
         </div>
@@ -374,13 +376,17 @@ interface ExperienceTemplate {
   company: string;
   position: string;
   time: string;
+  positionTwo?: string;
+  timeTwo?: string;
 }
 
 const myExperience: Ref<ExperienceTemplate[]> = ref([
   {
     company: 'Fidelity Investments',
-    position: 'Full Stack Software Engineer',
-    time: 'August 2023 - Present',
+    position: 'Senior Full Stack Software Engineer',
+    time: 'December 2024 - Present',
+    positionTwo: 'Full Stack Software Engineer',
+    timeTwo: 'August 2023 - December 2024',
   },
   {
     company: 'Brigham Young University - Department of History',

@@ -6,6 +6,8 @@
           <b class="is-size-5 has-text-primary">{{ company }}</b>
           <p class="is-size-6">{{ position }}</p>
           <p class="is-size-6">{{ time }}</p>
+          <p v-if="positionTwo" class="is-size-6 mt-5">{{ positionTwo }}</p>
+          <p v-if="timeTwo" class="is-size-6">{{ timeTwo }}</p>
         </div>
       </div>
     </div>
@@ -26,6 +28,14 @@ defineProps({
   time: {
     type: String,
     required: true,
+  },
+  positionTwo: {
+    type: String,
+    required: false,
+  },
+  timeTwo: {
+    type: String,
+    required: false,
   },
   hasLine: {
     type: Boolean,
