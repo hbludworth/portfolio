@@ -399,7 +399,7 @@ const myExperience: Ref<ExperienceTemplate[]> = ref([
     position: 'Search Engine Optimization Intern - Team Leader',
     time: 'January 2021 - April 2021',
   },
-  {
+  /* {
     company: 'Vivint Smart Home',
     position: 'Account Specialist',
     time: 'June 2020 - October 2020',
@@ -408,6 +408,6 @@ const myExperience: Ref<ExperienceTemplate[]> = ref([
     company: 'Filevine',
     position: 'Intake Specialist',
     time: 'September 2019 - March 2020',
-  },
+  }, */
 ]);
 </script>
